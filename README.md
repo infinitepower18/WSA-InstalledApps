@@ -1,4 +1,3 @@
-![GitHub release (latest by date)](https://img.shields.io/github/v/release/infinitepower18/wsa-installedapps)
 ![GitHub all releases](https://img.shields.io/github/downloads/infinitepower18/wsa-installedapps/total)
 ![GitHub](https://img.shields.io/github/license/infinitepower18/wsa-installedapps)
 
