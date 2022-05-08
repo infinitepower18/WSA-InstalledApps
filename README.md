@@ -1,7 +1,7 @@
 ![GitHub all releases](https://img.shields.io/github/downloads/infinitepower18/wsa-installedapps/total)
 ![GitHub](https://img.shields.io/github/license/infinitepower18/wsa-installedapps)
 
-# WSA Installed apps
+# WSA Installed Apps
 Add a shortcut on your Start Menu to bring up a list of apps installed on Windows Subsystem for Android. You can adjust notification settings, permissions etc. for each app via this list. The list also shows you system apps that are not present on the start menu such as Camera, Contacts and Settings.
 
 ## Download
