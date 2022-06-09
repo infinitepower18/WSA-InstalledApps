@@ -1,4 +1,5 @@
 ![GitHub all releases](https://img.shields.io/github/downloads/infinitepower18/wsa-installedapps/total)
+[![Android CI](https://github.com/infinitepower18/WSA-InstalledApps/actions/workflows/android.yml/badge.svg)](https://github.com/infinitepower18/WSA-InstalledApps/actions/workflows/android.yml)
 ![GitHub](https://img.shields.io/github/license/infinitepower18/wsa-installedapps)
 
 # WSA Installed Apps
