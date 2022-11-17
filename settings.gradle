@@ -12,5 +12,5 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-rootProject.name = "Installed apps"
+rootProject.name = "WSA Installed Apps"
 include ':app'
