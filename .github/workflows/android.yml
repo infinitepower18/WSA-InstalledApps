@@ -42,5 +42,5 @@ jobs:
       - name: Upload APK
         uses: actions/upload-artifact@v3
         with:
-          name: WSA Builder_(v${{ env.version }}@${{ env.commit }})
+          name: WSA Apps_(v${{ env.version }}@${{ env.commit }})
           path: app/build/outputs/apk/**/app-*.apk
