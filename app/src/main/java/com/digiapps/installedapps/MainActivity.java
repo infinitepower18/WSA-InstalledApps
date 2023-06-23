@@ -8,6 +8,9 @@ public class MainActivity extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         finishAndRemoveTask();
-        startActivity(new Intent(Intent.ACTION_MAIN).setClassName("com.android.settings", "com.android.settings.applications.ManageApplications"));
+        startActivity(new Intent(Intent.ACTION_MAIN).setClassName(
+                "com.android.settings",
+                "com.android.settings.applications.ManageApplications"
+        ));
     }
 }
