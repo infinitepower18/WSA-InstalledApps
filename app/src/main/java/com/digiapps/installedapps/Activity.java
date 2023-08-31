@@ -8,8 +8,8 @@ public class Activity extends android.app.Activity {
         super.onCreate(savedInstanceState);
         finishAndRemoveTask();
         startActivity(new Intent(Intent.ACTION_MAIN).setClassName(
-                "com.android.settings",
-                "com.android.settings.applications.ManageApplications"
+            "com.android.settings",
+            "com.android.settings.applications.ManageApplications"
         ));
     }
 }
