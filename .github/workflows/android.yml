@@ -37,8 +37,8 @@ jobs:
         run: |
           ./gradlew assemble --no-daemon
           {
-            echo "version=$(grep versionName app/build.gradle | awk '{print $2}' | tr -d \')"
-            echo "commit=v$(echo ${{ github.sha }} | cut -c-7)"
+            echo "version=v$(grep versionName app/build.gradle | awk '{print $2}' | tr -d \')"
+            echo "commit=$(echo ${{ github.sha }} | cut -c-7)"
           } >> "$GITHUB_ENV"
 
       - name: Upload APK
