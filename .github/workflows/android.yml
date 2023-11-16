@@ -23,7 +23,7 @@ jobs:
         uses: actions/setup-java@v3
         with:
           distribution: 'temurin'
-          java-version: '17'
+          java-version: '21'
 
       - name: Cache
         uses: actions/cache@v3
@@ -36,11 +36,13 @@ jobs:
       - name: Build with Gradle
         run: |
           ./gradlew assemble --no-daemon
-          echo "version=$(grep versionName app/build.gradle | awk '{print $2}' | tr -d \')" >> $GITHUB_ENV
-          echo "commit=$(echo ${{ github.sha }} | cut -c-7)" >> $GITHUB_ENV
+          {
+            echo "version=$(grep versionName app/build.gradle | awk '{print $2}' | tr -d \')"
+            echo "commit=v$(echo ${{ github.sha }} | cut -c-7)"
+          } >> "$GITHUB_OUTPUT"
 
       - name: Upload APK
         uses: actions/upload-artifact@v3
         with:
-          name: WSA-InstalledApps_(v${{ env.version }}@${{ env.commit }})
+          name: WSA-InstalledApps(${{ env.version }}@${{ env.commit }})
           path: app/build/outputs/apk/**/app-*.apk
