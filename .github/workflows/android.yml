@@ -42,7 +42,7 @@ jobs:
           } >> "$GITHUB_ENV"
 
       - name: Upload APK
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: WSA-InstalledApps(${{ env.version }}@${{ env.commit }})
           path: app/build/outputs/apk/**/app-*.apk
